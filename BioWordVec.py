@@ -7,7 +7,8 @@ The implementation is based on Fasttext and Node2vec.
 import argparse
 import networkx as nx
 import node2vec
-from gensim.models import FastText
+# from gensim.models import FastText
+import fastText
 import random
 import gzip
 import pickle as pkl
