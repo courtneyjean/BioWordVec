@@ -8,7 +8,7 @@ import argparse
 import networkx as nx
 import node2vec
 # from gensim.models import FastText
-import fastText
+import fasttext
 import random
 import gzip
 import pickle as pkl
