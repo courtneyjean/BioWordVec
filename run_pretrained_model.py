@@ -3,7 +3,6 @@ import numpy as np
 
 filename = 'data/bio_embedding_intrinsic'
 
-
 with open(fileName, mode='rb') as file: # b is important -> binary
     model = FastText.load(file)
 
