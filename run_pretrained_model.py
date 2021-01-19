@@ -1,7 +1,7 @@
 from gensim.models import FastText
 import numpy as np
 
-filename = 'pubmed_mesh_test'
+filename = 'data/bio_embedding_intrinsic'
 
 model = FastText.load(filename)
 print(model)
