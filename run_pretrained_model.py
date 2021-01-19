@@ -1,10 +1,13 @@
 from gensim.models import FastText
 import numpy as np
+import struct
 
 filename = 'data/bio_embedding_intrinsic'
 
 with open(fileName, mode='rb') as file: # b is important -> binary
-    model = FastText.load(file)
+    data= file.read()
+    file_contents = struct.unpack("@II", data)
+    model = FastText.load(file_contents)
 
 print(model)
 
