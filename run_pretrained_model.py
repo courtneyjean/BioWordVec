@@ -1,13 +1,17 @@
-from gensim.models import FastText
+#from gensim.models import FastText
+import fasttext
 import numpy as np
 import struct
 
-filename = 'data/bio_embedding_intrinsic'
+filename = 'data/BioWordVec_PubMed_MIMICIII_d200.bin'
 
-with open(filename, mode='rb') as file: # b is important -> binary
-    data= file.read()
-    file_contents = struct.unpack("@II", data)
-    model = FastText.load(file_contents)
+#with open(filename, mode='rb') as file: # b is important -> binary
+    #data= file.read()
+    #model = data.load_binary_data()
+
+#model = FastText.load_fasttext_format(filename)
+
+model = fasttext.load_model(filename)
 
 print(model)
 
