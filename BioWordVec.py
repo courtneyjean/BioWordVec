@@ -17,7 +17,7 @@ def parse_args():
 
 	parser = argparse.ArgumentParser()
 
-	parser.add_argument('--input_corpus', nargs='?', default='./data/pubmed_sample',
+	parser.add_argument('--input_corpus', nargs='?', default='./data/bio_embedding_intrinsic',
 	                    help='Input biomedical corpus')
 
 	parser.add_argument('--input_mesh', nargs='?', default='./data/MeSH_graph.edgelist',
