@@ -4,7 +4,7 @@ import struct
 
 filename = 'data/bio_embedding_intrinsic'
 
-with open(fileName, mode='rb') as file: # b is important -> binary
+with open(filename, mode='rb') as file: # b is important -> binary
     data= file.read()
     file_contents = struct.unpack("@II", data)
     model = FastText.load(file_contents)
