@@ -1,9 +1,11 @@
 #from gensim.models import FastText
-import fasttext
+#import fasttext
 import numpy as np
 import struct
+from gensim.models import KeyedVectors
 
-filename = 'models/BioWordVec_PubMed_MIMICIII_d200.bin'
+
+filename = 'models/BioWordVec_PubMed_MIMICIII_d200.vec.bin'
 
 #with open(filename, mode='rb') as file: # b is important -> binary
     #data= file.read()
@@ -11,7 +13,8 @@ filename = 'models/BioWordVec_PubMed_MIMICIII_d200.bin'
 
 #model = FastText.load_fasttext_format(filename)
 
-model = fasttext.load_model(filename)
+#model = fasttext.load_model(filename)
+model = KeyedVectors.load_word2vec_format(filename, binary=True)
 
 print(model)
 
