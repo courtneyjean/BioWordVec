@@ -3,7 +3,7 @@ import fasttext
 import numpy as np
 import struct
 
-filename = 'data/BioWordVec_PubMed_MIMICIII_d200.bin'
+filename = 'models/BioWordVec_PubMed_MIMICIII_d200.bin'
 
 #with open(filename, mode='rb') as file: # b is important -> binary
     #data= file.read()

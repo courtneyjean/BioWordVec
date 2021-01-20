@@ -1,0 +1,11 @@
+.idea/
+__pycache__/
+/bio_embedding_intrinsic_data
+/pubmed_mesh_test
+/pubmed_mesh_test.bin
+/pubmed_mesh_test.trainables.syn1neg.npy
+/pubmed_mesh_test.trainables.vectors_ngrams_lockf.npy
+/pubmed_mesh_test.trainables.vectors_vocab_lockf.npy
+/pubmed_mesh_test.wv.vectors.npy
+/pubmed_mesh_test.wv.vectors_ngrams.npy
+/pubmed_mesh_test.wv.vectors_vocab.npy
