@@ -22,7 +22,7 @@ test_word_1 = "computer"
 print("TEST 1")
 print(model.most_similar(test_word_1))
 
-test_word_2 = "heart attack"
+test_word_2 = "heartattack"
 print("TEST 2")
 print(model.most_similar(test_word_2))
 
